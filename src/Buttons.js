@@ -5,22 +5,32 @@ export default class Buttons extends Component {
   render() {
     return (
       <div className='clickarea'>
-        <Numbers number='1' />
-        <Numbers number='2' />
-        <Numbers number='3' />
-        <Numbers number='+' />
-        <Numbers number='5' />
-        <Numbers number='6' />
-        <Numbers number='4' />
-        <Numbers number='-' />
-        <Numbers number='7' />
-        <Numbers number='8' />
-        <Numbers number='9' />
-        <Numbers number='x' />
-        <Numbers number='%' stylename='bottom-left-corner' />
-        <Numbers number='.' />
-        <Numbers number='0' />
-        <Numbers number='=' stylename='bottom-right-corner' />
+        <Numbers number='C' stylename='leftsidecalc alterbtn' />
+        <Numbers number='+/-' stylename='alterbtn' />
+        <Numbers number='%' stylename='alterbtn' />
+        <Numbers number='/' stylename='opbtn' />
+
+        <Numbers number='7' stylename='leftsidecalc numbtn' />
+        <Numbers number='8' stylename='numbtn' />
+        <Numbers number='9' stylename='numbtn' />
+        <Numbers number='X' stylename='opbtn' />
+
+        <Numbers number='4' stylename='leftsidecalc numbtn' />
+        <Numbers number='5' stylename='numbtn' />
+        <Numbers number='6' stylename='numbtn' />
+        <Numbers number='-' stylename='opbtn' />
+
+        <Numbers number='1' stylename='leftsidecalc numbtn' />
+        <Numbers number='2' stylename='numbtn' />
+        <Numbers number='3' stylename='numbtn' />
+        <Numbers number='+' stylename='opbtn' />
+
+        <Numbers
+          number='0'
+          stylename='bottomcalc leftsidecalc zerobtn numbtn'
+        />
+        <Numbers number='.' stylename='bottomcalc numbtn' />
+        <Numbers number='=' stylename='bottomcalc opbtn equalsbtn' />
       </div>
     )
   }
